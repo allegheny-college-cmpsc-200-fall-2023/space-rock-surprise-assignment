@@ -32,7 +32,7 @@ This program will:
 
 #### Basic adder
 
-A callback to our earliest days with the CARDIAC, we'll explore a basic adder. But, there's a catch: we have a similar technical limitation to our earlier machine except _it gets worse._ Whereas the CARDIAC accepted any numbers from `-999`` - `+999`, working in the world of powers of `2` creates some constraints.
+A callback to our earliest days with the CARDIAC, we'll explore a basic adder. But, there's a catch: we have a similar technical limitation to our earlier machine except _it gets worse._ Whereas the CARDIAC accepted any numbers from `-999` - `+999`, working in the world of powers of `2` creates some constraints.
 
 This program will:
 
@@ -48,3 +48,11 @@ Our program should:
 
 * load the letters of the word `MOONROCK` in correct order using memory locations
 * print the fully assembled word
+
+### Changes to files in `.vscode`
+
+Based on your system setup (refer to your `hello-blinky` assignment), you will need to make _one_ change in your `.vscode/launch.json`:
+
+```json
+"gdbPath": "YOUR PATH TO GDB"
+```
