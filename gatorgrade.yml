@@ -1,0 +1,88 @@
+- hello_world/program.S:
+  - description: hello_world/program.S uses the LDR instruction to load address of string
+    category: ARMv6 Assembly
+    check: MatchFileRegex
+    options:
+      regex: 'LDR(\s)+?R0,(\s)+[=helloworld]'
+      count: 1
+      exact: true
+- hello_world/program.S:
+  - description: hello_world/program.S uses the BL instruction to use printf function
+    category: ARMv6 Assembly
+    check: MatchFileRegex
+    options:
+      regex: 'BL(\s)+?printf'
+      count: 1
+      exact: true
+- hello_world/program.S:
+  - description: hello_world/program.S contains no TODO markers
+    category: ARMv6 Assembly
+    check: MatchFileFragment
+    options:
+      fragment: TODO
+      count: 0
+      exact: true
+- basic_addition/program.S:
+  - description: basic_addition/program.S uses the LDR instruction to load data to registers
+    category: ARMv6 Assembly
+    check: MatchFileRegex
+    options:
+      regex: 'LDR(\s)+?R[0-7],(\s)+[=a-z0-9]+'
+      count: 1
+      exact: false
+- basic_addition/program.S:
+  - description: basic_addition/program.S uses the ADD instruction to add data
+    category: ARMv6 Assembly
+    check: MatchFileRegex
+    options:
+      regex: 'ADD(\s)+?R[0-7],(\s)+?R[0-7]'
+      count: 1
+      exact: true
+- basic_addition/program.S:
+  - description: basic_addition/program.S uses the MOV instruction to place sum in printable register
+    category: ARMv6 Assembly
+    check: MatchFileRegex
+    options:
+      regex: 'MOV(\s)+?R[0-1],(\s)+?R[0-7]'
+      count: 1
+      exact: false
+- basic_addition/program.S:
+  - description: basic_addition/program.S contains no TODO markers
+    category: ARMv6 Assembly
+    check: MatchFileFragment
+    options:
+      fragment: TODO
+      count: 0
+      exact: true
+- moon_rocks/program.S:
+  - description: moon_rocks/program.S uses the STRB instruction to store data in a memory location
+    category: ARMv6 Assembly
+    check: MatchFileRegex
+    options:
+      regex: 'STRB(\s)+?R[0-7],(\s)+?\[R[0-7]\]'
+      count: 7
+      exact: true
+- moon_rocks/program.S:
+  - description: moon_rocks/program.S uses the LDR instruction to load from a memory location to register
+    category: ARMv6 Assembly
+    check: MatchFileRegex
+    options:
+      regex: 'LDR(\s)+?R[0-7],(\s)+?[=a-z]+'
+      count: 1
+      exact: false
+- moon_rocks/program.S:
+  - description: moon_rocks/program.S uses the BL instruction to use printf function
+    category: ARMv6 Assembly
+    check: MatchFileRegex
+    options:
+      regex: 'BL(\s)+?printf'
+      count: 1
+      exact: true
+- moon_rocks/program.S:
+  - description: moon_rocks/program.S contains no TODO markers
+    category: ARMv6 Assembly
+    check: MatchFileFragment
+    options:
+      fragment: TODO
+      count: 0
+      exact: true
