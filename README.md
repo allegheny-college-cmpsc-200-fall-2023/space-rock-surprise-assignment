@@ -78,8 +78,6 @@ In order to recieve credit for the Hack, you must fill out the [hack.md](docs/ha
 
 ### Changes to files in `.vscode`
 
-Based on your system setup (refer to your `hello-blinky` assignment), you will need to make _one_ change in your `.vscode/launch.json`:
-
-```json
-"gdbPath": "YOUR PATH TO GDB"
-```
+Based on your system setup (refer to your `hello-blinky` assignment), you will need to make changes in _each exercise's folder_. 
+See our [wiki's entry  on "Configuring Assignments"](https://github.com/allegheny-college-cmpsc-200-fall-2023/course-materials/wiki/03-Configuring-Assignments)
+for more inforamtion.
