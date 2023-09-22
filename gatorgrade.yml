@@ -61,7 +61,6 @@
     options:
       regex: 'STRB(\s)+?R[0-7],(\s)+?\[R[0-7]\]'
       count: 7
-      exact: true
 - moon_rocks/program.S:
   - description: moon_rocks/program.S uses the LDR instruction to load from a memory location to register
     category: ARMv6 Assembly
@@ -86,8 +85,45 @@
       fragment: TODO
       count: 0
       exact: true
+- basalt_bonanza/program.S:
+  - description: basalt_bonanza.program.S contains STRB commands
+    category: ARMv6 Assembly
+    check: MatchFileRegex
+    options:
+      regex: 'STRB(\s|\t)r|R[0-8],(\s|\t)+?[=a-z]+'
+      count: 2
+- basalt_bonanza/program.S:
+  - description: basalt_bonanza.program.S contains LDRB commands
+    category: ARMv6 Assembly
+    check: MatchFileRegex
+    options:
+      regex: 'LDRB(\s|\t)r|R[0-8],(\s|\t)+?[=a-z]+'
+      count: 2
+- basalt_bonanza/program.S:
+  - description: basalt_bonanza.program.S contains ADD commands
+    category: ARMv6 Assembly
+    check: MatchFileRegex
+    options:
+      regex: 'ADD(\s|\t)r|R[0-8],r|R[#0-8]'
+      count: 2
+- basalt_bonanza/program.S:
+  - description: basalt_bonanza.program.S contains SUB commands
+    category: ARMv6 Assembly
+    check: MatchFileRegex
+    options:
+      regex: 'SUB(\s|\t)r|R[0-8],r|R[#0-8]'
+      count: 2
+- basalt_bonanza/program.S:
+  - description: basalt_bonanza.program.S contains ADD commands
+    category: ARMv6 Assembly
+    check: MatchFileRegex
+    options:
+      regex: 'BL(\s)+?printf'
+      count: 1
+      exact: true
 - docs/report.md:
   - description: docs/report.md answers all questions
+    category: Documentation
     check: MatchFileFragment
     options:
       fragment: TODO

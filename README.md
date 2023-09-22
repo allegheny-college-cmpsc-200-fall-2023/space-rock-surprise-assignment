@@ -74,7 +74,22 @@ In order to recieve credit for the Hack, you must fill out the [hack.md](docs/ha
 
 > Note: The hacks this week are _exploratory_ in nature; they ask you to, effectively, break the programs to discover the conditions surrounding various failure modes. 
 
+#### `basic_addition`
 
+We've successfully added two (`2`) numbers: `100` and `128`. Reading ahead in our future discussion of binary (see [our slides](https://github.com/allegheny-college-cmpsc-200-fall-2023/course-materials/blob/main/slides/CMPSC%20200%20-%20ARM%20Assembly.pdf)), characterize these numbers:
+
+* how "big" are they? 
+* what happens if we try to add `254` and `254`?
+  * what about `355`, and `420`?
+
+#### `moon_rocks` or `basalt_bonanza`
+
+Here, we've printed a string. Normally, not so daring a feat. But, this is space: the final frontier (or is it the unknown country?). What happens if we mess with our `.data` section: 
+
+* the length of the space-saving string or the `.fill`
+* what happens if we add or subtract too many numbers from our registers?
+
+> If you didn't get either of the jokes in the previous description add watching Star Trek VI to your weekend plans. I mean, Hamlet also says it somewhere, but it's not as cool as Star Trek.
 
 ### Changes to files in `.vscode`
 
