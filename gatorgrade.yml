@@ -86,3 +86,10 @@
       fragment: TODO
       count: 0
       exact: true
+- docs/report.md:
+  - description: docs/report.md answers all questions
+    check: MatchFileFragment
+    options:
+      fragment: TODO
+      count: 0
+      exact: true

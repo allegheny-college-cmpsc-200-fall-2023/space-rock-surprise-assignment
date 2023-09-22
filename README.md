@@ -9,7 +9,7 @@
 
 ## Learning objectives
 
-* debug a basic `Assembly` language program using register values to correct program code
+* debug a basic `Assembly` language programs using register values to correct program code
 * develop solutions to recognizable, known problems using Rasperry Pi Pico W hardware (ARMv6 ISA)
 * describe the process of using memory registers to manipulate data
 
@@ -27,8 +27,7 @@ The traditional new-to-a-language developer experience. This one is provided for
 
 This program will:
 
-* print the phrase `Hello, World!`, followed by
-* a counter which increments by `1` for each run of a loop
+* print the phrase `Hello, World!`
 
 #### Basic adder
 
@@ -48,6 +47,34 @@ Our program should:
 
 * load the letters of the word `MOONROCK` in correct order using memory locations
 * print the fully assembled word
+
+### Lab: You Bet Your Basalt
+
+Complete this work in [basalt_bonanza/program.S](basalt_bonanza/program.S).
+
+After digging through our `MOONROCK` collection, we came upon a pretty special one. Only, it fused together during re-entry, so we need to separate the parts and put it back together. This will require use of a new instruction that works _kind-of like_ an old instruction. Here, you'll learn a bit more about `LDRB` (or, "Load Register Byte").
+
+While we've used this briefly in at least one of our exercises (`basic_addition`), this assignment will test your understanding of storage and loading.
+
+Your program should:
+
+* rearrange the letters found in `rock` to fill the `rockbox`
+* these letters will spell a rare kind of space rock: in fact, there's only one in existence
+
+> Hint: You may need to look up the name of the rock on the internet.
+
+### Assignment "Hacks"
+
+See the `Suggestion` below to challenge yourself to implement a Hack. As always, you are allowed to develop
+your own Hack to satisfy this stretch goal. Place the code for the Hack inline with the code in the corresponding
+file.
+
+In order to recieve credit for the Hack, you must fill out the [hack.md](docs/hack.md) file located in the
+`docs` folder.
+
+> Note: The hacks this week are _exploratory_ in nature; they ask you to, effectively, break the programs to discover the conditions surrounding various failure modes. 
+
+
 
 ### Changes to files in `.vscode`
 

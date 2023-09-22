@@ -3,15 +3,16 @@
 
 main:
 	BL	stdio_init_all		@ initialize uart or usb
-	@ TODO: Load addend1 into a register
-	@ TODO: Load addend2 into a register
+@ TODO: Load addend1 into a register
+@ TODO: Load addend2 into a register
 
-	@ TODO: Add addend2 register _TO_ addend1 register
+@ TODO: Add addend2 register _TO_ addend1 register
 
-	@ TODO: MOV the sum to R1
+@ TODO: MOV the sum to R1
 
-	@ TODO: Use BL to call printf
+@ TODO: Use BL to call printf
 
-addend1:	.int		100
-addend2:	.int		128 
-sum: 		.asciz   	"SUM: %d\n"
+.data
+	addend1:	.int		100
+	addend2:	.int		128 
+	sum: 		.asciz   	"SUM: %d\n"
